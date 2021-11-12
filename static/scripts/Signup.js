@@ -1,9 +1,7 @@
 let signup_btn = document.querySelector(".signup-btn");
 
-
 let modalClose = document.querySelector(".modal-close");
 let modalBg = document.querySelector(".signup-bg");
-
 
 modalBg.classList.add("bg-active");
 modalClose.addEventListener("click", function () {
@@ -11,7 +9,6 @@ modalClose.addEventListener("click", function () {
 });
 
 function store() {
- 
   let name = document.getElementById("username").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
@@ -35,6 +32,6 @@ function store() {
     arr.push(userobj);
     localStorage.setItem("user_details", JSON.stringify(arr));
 
-    window.location.href = "http://localhost:3452/login";
+    window.location.href = "https://healthkart-clone.herokuapp.com/login";
   }
 }

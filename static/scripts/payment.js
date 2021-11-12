@@ -82,6 +82,6 @@ debit.addEventListener("click", function () {
 let cod = document.querySelector(".COD");
 cod.addEventListener("click", function () {
   setTimeout(function () {
-    window.location.href = "http://localhost:3452/sucess";
+    window.location.href = "https://healthkart-clone.herokuapp.com/sucess";
   }, 2000);
 });

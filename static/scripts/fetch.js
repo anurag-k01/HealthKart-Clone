@@ -1,11 +1,11 @@
 async function gett() {
-  var res = await fetch("http://localhost:3452/users");
+  var res = await fetch("https://healthkart-clone.herokuapp.com/users");
   let data = await res.json();
   showdata(data);
 }
 gett();
 async function tredning() {
-  var res1 = await fetch("http://localhost:3452/trend");
+  var res1 = await fetch("https://healthkart-clone.herokuapp.com/trend");
   let data1 = await res1.json();
   showTrendingData(data1);
 }
@@ -38,7 +38,7 @@ function showTrendingData(data) {
     let btn_span = document.createElement("span");
 
     let btn = document.createElement("button");
-    btn.setAttribute("class","cartbt")
+    btn.setAttribute("class", "cartbt");
     btn.innerText = "Add";
     count = 0;
     btn.addEventListener(
@@ -53,7 +53,8 @@ function showTrendingData(data) {
           quantity();
         } else {
           if (count == 2) {
-            window.location.href = "http://localhost:3452/cart";
+            window.location.href =
+              "https://healthkart-clone.herokuapp.com/cart";
           }
         }
       },
@@ -91,7 +92,7 @@ function showdata(data) {
       add_to_items(item);
     });
     let btn = document.createElement("button");
-    btn.setAttribute("class","cartbtn")
+    btn.setAttribute("class", "cartbtn");
     btn.innerText = "Add";
     count = 0;
     btn.addEventListener(
@@ -106,19 +107,17 @@ function showdata(data) {
           quantity();
         } else {
           if (count == 2) {
-            window.location.href = "http://localhost:3452/cart";
+            window.location.href =
+              "https://healthkart-clone.herokuapp.com/cart";
           }
         }
       },
       false
     );
-     
-
 
     minidiv.append(btn);
-    
-    maindiv.append(minidiv);
 
+    maindiv.append(minidiv);
   });
 
   // console.log(data);
@@ -143,7 +142,7 @@ function add_to_items(item) {
   arr.push(item);
 
   localStorage.setItem("items", JSON.stringify(arr));
-  window.location.href = "http://localhost:3452/items";
+  window.location.href = "https://healthkart-clone.herokuapp.com/items";
 }
 function add_to_kart(item) {
   let count = 0;
@@ -161,7 +160,7 @@ function add_to_kart(item) {
 }
 
 function viewall() {
-  window.location.href = "http://localhost:3452/sorting";
+  window.location.href = "https://healthkart-clone.herokuapp.com/sorting";
 }
 function quantity() {
   let data_div = JSON.parse(localStorage.getItem("kart"));

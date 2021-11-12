@@ -108,29 +108,26 @@ function myFunction() {
   }
 }
 function login() {
-  window.location.href = "http://localhost:3452/login";
+  window.location.href = "https://healthkart-clone.herokuapp.com/login";
 }
 function signup() {
-  window.open("http://localhost:3452/signup");
+  window.open("https://healthkart-clone.herokuapp.com/signup");
 }
 var suggest_div = document.getElementById("suggest");
 var timerId;
-
-
-
-
-
 
 async function searchMovies() {
   let querryy = document.getElementById("search-inp").value;
   if (querryy.length <= 0) {
     return false;
   } else {
-  let res = await fetch(`http://localhost:3452/users/${querryy}`);
-  let data = await res.json();
+    let res = await fetch(
+      `https://healthkart-clone.herokuapp.com/users/${querryy}`
+    );
+    let data = await res.json();
 
-  return data;
-   }
+    return data;
+  }
 }
 function autosuggest() {
   if (timerId) {
@@ -143,18 +140,17 @@ function autosuggest() {
   }, 1000);
 }
 function appendMovies(d) {
-  
   suggest_div.innerHTML = null;
-  
+
   let print_div = document.createElement("div");
-  print_div.classList="suggest-box"
+  print_div.classList = "suggest-box";
   d.forEach(({ name }) => {
     let search_div = document.createElement("div");
-    search_div.addEventListener("click",()=>{
-      window.location.href="https://google.com"
-    })
+    search_div.addEventListener("click", () => {
+      window.location.href = "https://google.com";
+    });
     let p = document.createElement("span");
-    p.innerText = name;   
+    p.innerText = name;
     search_div.append(p);
     print_div.append(search_div);
     suggest_div.append(print_div);
