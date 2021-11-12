@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| HealthKart.com</title>
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/OIP.x17IKVl58-xVsu15yk8trQAAAA?pid=ImgDet&rs=1"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/static/css/navbaar.css" />
+    <link rel="stylesheet" href="/static/css/cartComponents.css" />
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="logo_title">
+        <a href="http://localhost:3452/users/web"
+          ><h1>HEALT<span class="logo">HK</span>ART</h1></a
+        >
+      </div>
+
+      <div class="current_page">
+        <div>
+          <span>
+            <img src="/static/components/check.png" alt="" class="check" />
+          </span>
+          <span>CART -------------------</span>
+          <span>
+            <img src="/static/components/blackcheck.png" alt="" class="check" />
+          </span>
+          <span>ADDRESS -------------------</span>
+          <span>
+            <img src="/static/components/blackcheck.png" alt="" class="check" />
+          </span>
+          <span>PAYMENT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="overall">
+      <div class="first">
+        <div id="total"></div>
+        <div id="data"></div>
+      </div>
+      <div class="second">
+        <div class="delivery" style="display: block">
+          <span
+            ><input class="pincode" type="text" placeholder="Enter Pin Code"
+          /></span>
+          <span><button>Submit</button></span>
+        </div>
+        <div class="total_Payable">
+          <span> Total Payable</span>
+          <span id="final_price"></span>
+        </div>
+
+        <!-- Give the Address Page link here -->
+        <div id="proceed"></div>
+
+        <div class="modal-bg">
+          <div class="modal">
+            <h2>Add New Address</h2>
+            <label for="name">Name<span>*</span> </label>
+            <input type="text" id="name" name="name" />
+            <label for="Mobile">Mobile No.<span>*</span> </label>
+            <input type="number" id="phno" name="Mobile" />
+            <label for="Address">Address<span>*</span></label>
+            <input type="text" id="address" name="Address" />
+            <input type="text" placeholder="Landmark" />
+            <label for="pincode">Pincode<span>*</span></label>
+            <input type="text" id="pincode" name="pincode" />
+            <label for="state">State<span>*</span></label>
+            <input type="text" id="state" name="state" />
+            <label for="City">City<span>*</span></label>
+            <input type="text" id="city" name="City" />
+            <a href="http://localhost:3452/checkout">
+              <button onclick="proceed()">Save & Deliver</button></a
+            >
+            <span class="modal-close">X</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="/static/scripts/kart.js"></script>
+<script src="/static/scripts/navbaar.js"></script>
+<script src="/static/scripts/modal.js"></script>

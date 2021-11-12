@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| HealthKart.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/OIP.x17IKVl58-xVsu15yk8trQAAAA?pid=ImgDet&rs=1"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/static/css/items.css" />
+    <link rel="stylesheet" href="/static/css/homepage.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="nav">
+        <div class="first-row">
+          <div>
+            <a href="/users/web"
+              ><h1>HEALT<span class="logo">HK</span>ART</h1></a
+            >
+          </div>
+          <!-- searchBaar -->
+          <div class="nav_content">
+            <div class="input-icons">
+              <img
+                src="https://img10.hkrtcdn.com/react/static/media/common/header/search-icon-grey-2.svg"
+                alt=""
+              />
+              <div style="position: relative">
+                <input
+                  oninput="autosuggest()"
+                  class="input-field"
+                  type="text"
+                  id="search-inp"
+                  placeholder="Search for products,brands or Heatlh Goals"
+                />
+              </div>
+              <div id="suggest" style="position: absolute"></div>
+            </div>
+          </div>
+          <div>
+            <a href="">Loyalty Rewards </a>
+          </div>
+          <div class="vl"></div>
+          <div id="customer-support">
+            <div id="customer-head">
+              <a href="">Customer Support</a>
+            </div>
+            <div class="customer-body" id="customer-body">
+              <div class="customer-body-dropdown1">
+                <div>
+                  <h4>Contact us</h4>
+                  <img
+                    src="https://img10.hkrtcdn.com/react/static/media/common/header/chat-with-us.svg"
+                    alt=""
+                  />
+                  <label for="">Chat with us</label>
+                  <br />
+                  <img
+                    src="https://img2.hkrtcdn.com/react/static/media/common/header/email-us.svg"
+                    alt=""
+                  />
+                  <label for="">Email us</label>
+                  <br />
+                  <img
+                    src="https://img10.hkrtcdn.com/react/static/media/common/header/ask-our-expert.svg"
+                    alt=""
+                  />
+                  <label for="">Ask our Experts</label>
+                </div>
+                <!-- <hr class="vl"> -->
+                <div>
+                  <h4>Helpful Links</h4>
+
+                  <label for="">Track your order</label>
+                  <br />
+
+                  <label for="">Return Policy</label>
+                  <br />
+
+                  <label for="">FAQs</label>
+                </div>
+              </div>
+              <div>
+                <label for="">For Support & Order Enquiries</label>
+                <p>Call us at : 0124-4616444</p>
+                <p>10AM to & 7PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="vl"></div>
+          <div id="account-support">
+            <div id="account-head">
+              <a href="" id="account">
+                <img
+                  src="https://img2.hkrtcdn.com/react/static/media/common/header/acc-icon.svg"
+                  alt=""
+                />
+                My Account & Orders</a
+              >
+            </div>
+            <div id="account-body" class="account-body">
+              <div class="account_details">
+                <button class="login-btn" onclick="login()">Login</button>
+                <!-- 
+login part -->
+
+                <!-- 
+Loginend -->
+
+                <br />
+                <button class="signup" onclick="signup()">
+                  New user? / Sign up
+                </button>
+                <br />
+                <div class="acc_div">
+                  <div class="account_div1">
+                    <h4>My Account</h4>
+                    <img
+                      src="https://img2.hkrtcdn.com/react/static/media/common/header/my-orders.svg"
+                      alt=""
+                    />
+                    <label for=""> Orders</label>
+                    <br />
+                    <img
+                      src="https://img10.hkrtcdn.com/react/static/media/common/header/my-wishlist.svg"
+                      alt=""
+                    />
+                    <label for=""> Wishlist</label>
+                    <br />
+                    <img
+                      src="https://img10.hkrtcdn.com/react/static/media/common/header/loyalty-rewards.svg"
+                      alt=""
+                    />
+                    <label for=""> Loyalty Rewards</label>
+                  </div>
+                  <div class="account_div1">
+                    <h4>Health Profile</h4>
+
+                    <label for="">Diet Plan</label>
+                    <br />
+
+                    <label for="">My Consultation</label>
+                    <br />
+
+                    <label for="">Recommended Products</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vl"></div>
+          <div>
+            <a href="http://localhost:3452/cart" id="customer_sup"
+              ><img
+                src="https://img2.hkrtcdn.com/react/static/media/common/header/cart.svg"
+                alt=""
+              />
+            </a>
+
+            <div id="cart_count"></div>
+          </div>
+        </div>
+
+        <hr />
+        <div id="second_row">
+          <div id="second_nav">
+            <div id="category-content">
+              <div id="category-head">
+                <a href="">Category</a>
+              </div>
+              <div id="category-body" class="category-body"></div>
+            </div>
+
+            <div id="brand-content">
+              <div id="brand-head">
+                <a href="">Brand</a>
+              </div>
+              <div id="brand-body" class="brand-body"></div>
+            </div>
+
+            <div id="gender-content">
+              <div id="gender-head">
+                <a href="">Gender</a>
+              </div>
+              <div id="gender-body" class="gender-body">
+                <p>Shop by Gender</p>
+                <div class="gender-minibody">
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/react/static/media/common/header/man-2.svg"
+                      alt=""
+                    />
+                    <p>men</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/react/static/media/common/header/woman-2.svg"
+                      alt=""
+                    />
+                    <p>women</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="goal-content">
+              <div id="goal-head">
+                <a href="">Goal</a>
+              </div>
+              <div id="goal-body" class="goal-body">
+                <p>Shop by Health Goals</p>
+                <div class="goal-minibody">
+                  <div>
+                    <img
+                      src="https://img6.hkrtcdn.com/14784/normal_1478355_o.png"
+                      alt=""
+                    />
+                    <p>Immunity & well Being</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img8.hkrtcdn.com/14784/normal_1478357_o.png"
+                      alt=""
+                    />
+
+                    <p>Lean Muscel Mass</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img10.hkrtcdn.com/14784/normal_1478359_o.png"
+                      alt=""
+                    />
+                    <p>Weight Loss</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/14784/normal_1478361_o.png"
+                      alt=""
+                    />
+                    <p>Bulk Gain</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img4.hkrtcdn.com/14784/normal_1478363_o.png"
+                      alt=""
+                    />
+                    <p>Stress & Relaxatoin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="bestseller-content">
+              <div id="bestseller-head">
+                <a href="">Bestsellers</a>
+              </div>
+              <div id="bestseller-body" class="bestseller-body"></div>
+            </div>
+            <div id="deals-content">
+              <div id="deals-head">
+                <a href="">Deals</a>
+              </div>
+              <div id="deals-body" class="deals-body">
+                <p>Offers & Deals</p>
+                <div class="deals-minibody">
+                  <div>
+                    <img
+                      src="https://img4.hkrtcdn.com/14768/normal_1476713_o.png"
+                      alt=""
+                    />
+                    <p>Flash Sale</p>
+                  </div>
+
+                  <div>
+                    <img
+                      src="https://img8.hkrtcdn.com/14768/normal_1476717_o.png"
+                      alt=""
+                    />
+                    <p>Super Saving Sale</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/14768/normal_1476721_o.png"
+                      alt=""
+                    />
+                    <p>999 Store</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img10.hkrtcdn.com/14768/normal_1476719_o.png"
+                      alt=""
+                    />
+                    <p>599 Store</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/react/static/media/common/misc/crazy.svg"
+                      alt=""
+                    />
+                    <p>Crazy Deals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div><a href="">Gift Card</a></div>
+            <div><a href="">Blog, Videos & More</a></div>
+          </div>
+          <div class="nav-btn">
+            <button id="hk_btn">
+              <img
+                src="https://img10.hkrtcdn.com/react/static/media/common/header/hk-consult.svg"
+                alt=""
+              />
+              H K Consult
+            </button>
+            <button id="store_btn">
+              <img
+                src="https://img10.hkrtcdn.com/react/static/media/common/header/location-pin.svg"
+                alt=""
+              />
+              Find a Store
+            </button>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div id="data"></div>
+  </body>
+</html>
+<script src="/static/scripts/itemsPage.js"></script>
+<script src="/static/scripts/navbaar.js"></script>

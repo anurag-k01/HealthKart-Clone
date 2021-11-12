@@ -1,0 +1,31 @@
+.img_item {
+  height: 300px !important;
+}
+.items_pg {
+  margin-left: 300px;
+  /* border: 1px solid black; */
+}
+.parent {
+  display: flex;
+  /* margin: 30px; */
+}
+.text > span{
+  font-weight: bold;
+  
+}
+.text {
+  margin-left: 30px;
+
+  font-size: 23px;
+  width: 600px;
+}
+.parent > div{
+  margin-right: 50px;
+}
+.text * button{
+  margin-top: 30px;
+  margin: 20px;
+}
+.drop2{
+  margin-top: 20px;
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuscleBlaze -(MB) India's No.1</title>
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/OIP.x17IKVl58-xVsu15yk8trQAAAA?pid=ImgDet&rs=1"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+     <div>
+      <div class="nav">
+        <div class="first-row">
+          <div>
+            <a href="http://localhost:3452/users/web"
+              ><h1>HEALT<span class="logo">HK</span>ART</h1></a
+            >
+          </div>
+          <!-- searchBaar -->
+          <div class="nav_content">
+            <div class="input-icons">
+              <img
+                src="https://img10.hkrtcdn.com/react/static/media/common/header/search-icon-grey-2.svg"
+                alt=""
+              />
+              <input
+                class="input-field"
+                type="text"
+                placeholder="Search for products,brands or Heatlh Goals"
+              />
+            </div>
+          </div>
+          <div>
+            <a href="">Loyalty Rewards </a>
+          </div>
+          <div class="vl"></div>
+          <div id="customer-support">
+            <div id="customer-head">
+              <a href="">Customer Support</a>
+            </div>
+            <div class="customer-body" id="customer-body">
+              <div class="customer-body-dropdown1">
+                <div>
+                  <h4>Contact us</h4>
+                  <img
+                    src="https://img10.hkrtcdn.com/react/static/media/common/header/chat-with-us.svg"
+                    alt=""
+                  />
+                  <label for="">Chat with us</label>
+                  <br />
+                  <img
+                    src="https://img2.hkrtcdn.com/react/static/media/common/header/email-us.svg"
+                    alt=""
+                  />
+                  <label for="">Email us</label>
+                  <br />
+                  <img
+                    src="https://img10.hkrtcdn.com/react/static/media/common/header/ask-our-expert.svg"
+                    alt=""
+                  />
+                  <label for="">Ask our Experts</label>
+                </div>
+                <!-- <hr class="vl"> -->
+                <div>
+                  <h4>Helpful Links</h4>
+
+                  <label for="">Track your order</label>
+                  <br />
+
+                  <label for="">Return Policy</label>
+                  <br />
+
+                  <label for="">FAQs</label>
+                </div>
+              </div>
+              <div>
+                <label for="">For Support & Order Enquiries</label>
+                <p>Call us at : 0124-4616444</p>
+                <p>10AM to & 7PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="vl"></div>
+          <div id="account-support">
+            <div id="account-head">
+              <a href="" id="account">
+                <img
+                  src="https://img2.hkrtcdn.com/react/static/media/common/header/acc-icon.svg"
+                  alt=""
+                />
+                My Account & Orders</a
+              >
+            </div>
+            <div id="account-body" class="account-body">
+              <div class="account_details">
+                <button class="login" onclick="login()">Login</button>
+                <br />
+                <button class="signup" onclick="signup()">
+                  New user? / Sign up
+                </button>
+                <br />
+                <div class="acc_div">
+                  <div class="account_div1">
+                    <h4>My Account</h4>
+                    <img
+                      src="https://img2.hkrtcdn.com/react/static/media/common/header/my-orders.svg"
+                      alt=""
+                    />
+                    <label for=""> Orders</label>
+                    <br />
+                    <img
+                      src="https://img10.hkrtcdn.com/react/static/media/common/header/my-wishlist.svg"
+                      alt=""
+                    />
+                    <label for=""> Wishlist</label>
+                    <br />
+                    <img
+                      src="https://img10.hkrtcdn.com/react/static/media/common/header/loyalty-rewards.svg"
+                      alt=""
+                    />
+                    <label for=""> Loyalty Rewards</label>
+                  </div>
+                  <div class="account_div1">
+                    <h4>Health Profile</h4>
+
+                    <label for="">Diet Plan</label>
+                    <br />
+
+                    <label for="">My Consultation</label>
+                    <br />
+
+                    <label for="">Recommended Products</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vl"></div>
+          <div>
+            <a href="http://localhost:3452/cart" id="customer_sup"
+              ><img
+                src="https://img2.hkrtcdn.com/react/static/media/common/header/cart.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+
+        <hr />
+        <div id="second_row">
+          <div id="second_nav">
+            <div id="category-content">
+              <div id="category-head">
+                <a href="">Category</a>
+              </div>
+              <div id="category-body" class="category-body"></div>
+            </div>
+
+            <div id="brand-content">
+              <div id="brand-head">
+                <a href="">Brand</a>
+              </div>
+              <div id="brand-body" class="brand-body"></div>
+            </div>
+
+            <div id="gender-content">
+              <div id="gender-head">
+                <a href="">Gender</a>
+              </div>
+              <div id="gender-body" class="gender-body">
+                <p>Shop by Gender</p>
+                <div class="gender-minibody">
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/react/static/media/common/header/man-2.svg"
+                      alt=""
+                    />
+                    <p>men</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/react/static/media/common/header/woman-2.svg"
+                      alt=""
+                    />
+                    <p>women</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="goal-content">
+              <div id="goal-head">
+                <a href="">Goal</a>
+              </div>
+              <div id="goal-body" class="goal-body">
+                <p>Shop by Health Goals</p>
+                <div class="goal-minibody">
+                  <div>
+                    <img
+                      src="https://img6.hkrtcdn.com/14784/normal_1478355_o.png"
+                      alt=""
+                    />
+                    <p>Immunity & well Being</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img8.hkrtcdn.com/14784/normal_1478357_o.png"
+                      alt=""
+                    />
+
+                    <p>Lean Muscel Mass</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img10.hkrtcdn.com/14784/normal_1478359_o.png"
+                      alt=""
+                    />
+                    <p>Weight Loss</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/14784/normal_1478361_o.png"
+                      alt=""
+                    />
+                    <p>Bulk Gain</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img4.hkrtcdn.com/14784/normal_1478363_o.png"
+                      alt=""
+                    />
+                    <p>Stress & Relaxatoin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="bestseller-content">
+              <div id="bestseller-head">
+                <a href="">Bestsellers</a>
+              </div>
+              <div id="bestseller-body" class="bestseller-body"></div>
+            </div>
+            <div id="deals-content">
+              <div id="deals-head">
+                <a href="">Deals</a>
+              </div>
+              <div id="deals-body" class="deals-body">
+                <p>Offers & Deals</p>
+                <div class="deals-minibody">
+                  <div>
+                    <img
+                      src="https://img4.hkrtcdn.com/14768/normal_1476713_o.png"
+                      alt=""
+                    />
+                    <p>Flash Sale</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img8.hkrtcdn.com/14768/normal_1476717_o.png"
+                      alt=""
+                    />
+                    <p>Super Saving Sale</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/14768/normal_1476721_o.png"
+                      alt=""
+                    />
+                    <p>999 Store</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img10.hkrtcdn.com/14768/normal_1476719_o.png"
+                      alt=""
+                    />
+                    <p>599 Store</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://img2.hkrtcdn.com/react/static/media/common/misc/crazy.svg"
+                      alt=""
+                    />
+                    <p>Crazy Deals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div><a href="">Gift Card</a></div>
+            <div><a href="">Blog, Videos & More</a></div>
+          </div>
+          <div class="nav-btn">
+            <button id="hk_btn">
+              <img
+                src="https://img10.hkrtcdn.com/react/static/media/common/header/hk-consult.svg"
+                alt=""
+              />
+              H K Consult
+            </button>
+            <button id="store_btn">
+              <img
+                src="https://img10.hkrtcdn.com/react/static/media/common/header/location-pin.svg"
+                alt=""
+              />
+              Find a Store
+            </button>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="container">
+      <div class="block">
+        <div class="left">
+          <h1>Browse By</h1>
+
+          <div class="toggleBox">
+            <a href="" class="categories">Categories</a>
+            <ul class="gl">
+              <li><span>Whey Protein</span> <span class="quant">110</span></li>
+              <li><span>Mass Gainers</span> <span class="quant">78</span></li>
+              <li>
+                <span>Amino Acids/B...</span> <span class="quant">57</span>
+              </li>
+              <li>
+                <span>Whey Protein Is...</span> <span class="quant">43</span>
+              </li>
+              <li><span>Pre-Workout</span> <span class="quant">39</span></li>
+              <li><span>Protein Bars</span> <span class="quant">36</span></li>
+            </ul>
+          </div>
+
+          <div class="marginn"></div>
+          <div class="toggleBox_2">
+            <a href="" class="categories">Offers</a>
+            <ul class="gl">
+              <li><span>Whey Protein</span> <span class="quant">110</span></li>
+              <li><span>Mass Gainers</span> <span class="quant">78</span></li>
+              <li>
+                <span>Amino Acids/B...</span> <span class="quant">57</span>
+              </li>
+              <li>
+                <span>Whey Protein Is...</span> <span class="quant">43</span>
+              </li>
+              <li><span>Pre-Workout</span> <span class="quant">39</span></li>
+              <li><span>Protein Bars</span> <span class="quant">36</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right">
+          <a href="">
+            <img
+              src="https://img8.hkrtcdn.com/15155/bnr_1515467_o.jpg"
+              alt=""
+              class="poster"
+          /></a>
+          
+            
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Sort By</button>
+  <div id="myDropdown" class="dropdown-content">
+  <button class="sorting" onclick="SortByPrice()">Price--Low to High</button><br>
+<button  class="sorting"onclick="SortByPriceHL()">Price--High to Low</button><br>
+ <button  class="sorting"onclick=" sortByDiscountLtoH()">
+              Discount--Low to High
+            </button><br>
+            <button class="sorting" onclick=" sortByDiscountHtoL()">
+              Discount--High to Low
+            </button><br>
+<button  class="sorting"onclick="SortByRating()">Rating--High to Low</button><br>
+   
+            <!-- 
+            
+            
+        
+             -->
+          </div>
+          <div id="grid-align"></div>
+        </div>
+      </div>
+    </div>
+      <div class="four_box">
+      <div class="one_block">
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/misc/hk-cash-icon.svg"
+          alt=""
+        />
+        <h3>Earn HK Cash</h3>
+        <p>
+          Shop with us and get HK Cash to redeem on your next purchase. Know
+          more about <br />
+          <span>HK Cash</span>
+        </p>
+      </div>
+
+      <div class="one_block">
+        <img
+          src="https://img10.hkrtcdn.com/react/static/media/common/misc/safe-payment-icon.svg"
+          alt=""
+        />
+        <h3>Safe Payments</h3>
+        <p>Pay with the world’s most popular and secure payment methods.</p>
+      </div>
+      <div class="one_block">
+        <img
+          src="https://img10.hkrtcdn.com/react/static/media/common/misc/authenticity-icon.svg"
+          alt=""
+        />
+        <h3>Authenticity Garunteed</h3>
+        <p>!00% authentic products for our customers.</p>
+      </div>
+      <div class="one_block">
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/misc/andriod-icon.svg"
+          alt=""
+        />
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/misc/apple-icon.svg"
+          alt=""
+        />
+        <h3>Download Healthkart App</h3>
+        <p>Get the best experience of Healthkart at your fingertips</p>
+        <img
+          src="https://img10.hkrtcdn.com/react/static/media/common/misc/playstore-icon.svg"
+          alt=""
+        />
+        <img
+          src="https://img10.hkrtcdn.com/react/static/media/common/misc/appstore-icon.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="footer_block">
+        <h4>HEALTHKART</h4>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Refer & Earn</p>
+        <p>Loyalty Program</p>
+        <p>HK Consult</p>
+        <p>Blogs, Videos & More</p>
+      </div>
+
+      <div class="footer_block">
+        <h4>BRANDS</h4>
+        <p>MuscleBlaze</p>
+        <p>TrueBasics</p>
+        <p>JustHer</p>
+        <p>Nouriza</p>
+        <p>Gritzo</p>
+        <p>bGREEN</p>
+      </div>
+      <div class="footer_block">
+        <h4>HEALTH & FITNESS</h4>
+        <p>Bodybuilding</p>
+        <p>Weight Loss</p>
+        <p>Hair & Skin</p>
+        <p>Care</p>
+        <p>Sports</p>
+        <p>Nutrition</p>
+      </div>
+      <div class="footer_block">
+        <h4>POLICIES</h4>
+        <p>Terms & Conditions</p>
+        <p>Delivery Policy</p>
+        <p>Privacy Policy</p>
+        <p>Returns Policy</p>
+      </div>
+      <div class="footer_block">
+        <h4>QUICK LINKS</h4>
+        <p>My Account/p></p>
+        <p>Track Your Order</p>
+        <p>Store Locator</p>
+        <p>HK Cash</p>
+        <p>HK Coupons</p>
+        <p>FAQs</p>
+      </div>
+      <div class="footer_block">
+        <h4>ABOUT HEALTHKART</h4>
+        <p class="long_para">
+          HealthKart.com is India’s largest online health & fitness store for
+          men and women. Shop online from the latest collections of health,
+          fitness and similar products featuring the best brands.
+        </p>
+        <div class="footer_block">
+          <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <p>Be the first one to receive amazing offers, deals and news</p>
+          <input type="text" class="inp" placeholder="Enter your email" />
+          <button id="subscribe_btn">SUBSCRIBE</button>
+        </div>
+        <div class="footer_block">
+          <h4>CONNECT WITH US</h4>
+          <img
+            src="https://img2.hkrtcdn.com/react/static/media/common/footer/facebook.svg"
+            alt=""
+          />
+          <img
+            src="https://img2.hkrtcdn.com/react/static/media/common/footer/instagram.svg"
+            alt=""
+          />
+          <img
+            src="https://img2.hkrtcdn.com/react/static/media/common/footer/twitter.svg"
+            alt=""
+          />
+          <img
+            src="https://img2.hkrtcdn.com/react/static/media/common/footer/youtube.svg"
+            alt=""
+          />
+          <img
+            src="https://img2.hkrtcdn.com/react/static/media/common/footer/pinterest.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="below_footer">
+      <div>
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/footer/hk-consult.svg"
+          alt=""
+        />
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/footer/A-G.svg"
+          alt=""
+        />
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/footer/RP.svg"
+          alt=""
+        />
+      </div>
+      <p>
+        Disclaimer:The information contained on HealthKart (www.healthkart.com
+        or subdomains) is provided for informational purposes only and is not
+        meant to substitute for the advice provided by your doctor or other
+        healthcare professional. Information and statements regarding products,
+        supplements, programs etc listed on HealthKart have not been evaluated
+        by the Food and Drug Administration or any government authority and are
+        not intended to diagnose, treat, cure, or prevent any disease. Please
+        read product packaging carefully prior to purchase and use. The results
+        from the products will vary from person to person. No individual result
+        should be seen as typical.
+      </p>
+    </div>
+    <hr />
+    <div>
+      <p class="last_p">Copyright © 2021, HealthKart.com, or its affiliates</p>
+
+      <div class="last_div">
+        <h5>DOWNLOAD OUR APP</h5>
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/footer/App-Store.svg"
+          alt=""
+        />
+        <img
+          src="https://img10.hkrtcdn.com/react/static/media/common/footer/Google-Play.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="static/scripts/navbaar.js"></script>
+<script src="static/scripts/product.js"></script>

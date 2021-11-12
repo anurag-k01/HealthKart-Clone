@@ -1,0 +1,79 @@
+.login-text > h2,
+.signup-text > h2 {
+  font-family: Source Sans Pro, sans-serif;
+}
+.login-text > p,
+.signup-text > p {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+}
+.login-text,
+.signup-text {
+  background-image: url("https://img4.hkrtcdn.com/react/static/media/signupFlow/login-bg.png");
+  padding: 10px;
+  color: white;
+  line-height: 25px;
+  border-radius: 5px;
+}
+.login-input > h2,
+.signup-input > h2 {
+  color: #20b8b8;
+}
+.login-content,
+.signup-content {
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.login-input,
+.signup-input {
+  font-family: Roboto, sans-serif;
+  width: 350px;
+  border: 1px solid black;
+  text-align: center;
+  height: 80vh;
+  line-height: 35px;
+  background-color: white;
+}
+.login-input > button,
+.signup-input > button {
+  display: flex;
+  margin: 30px 0px 0px 20px;
+  width: 300px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #00aeae;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.login-bg,
+.signup-bg {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
